@@ -9,6 +9,7 @@
     <!-- tailwind link start -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3248b66f3c.js" crossorigin="anonymous"></script>
     <!-- tailwind link end -->
 </head>
 
@@ -24,11 +25,11 @@
         </div>
         <div class="">
            <div class="mr-2">
-            <button class="btn btn-neutral">Sort By View</button>
+            <button class="btn btn-neutral" id="sort" onclick="sort()">Sort By View</button>
            </div>
                <div>
                 
-                <button class="btn btn-error">Error</button>
+                <button class="btn btn-error ">Error</button>
 
                </div>
         </div>
@@ -38,14 +39,16 @@
 <hr>
    </header>
 <!-- main section -->
-   <main>
-      <div id="category-btn">
+   <main class="container mx-auto">
+      <div id="category-btn" class="flex justify-center gap-10 mt-10 mb-20">
         
       </div>
 
 
       <!-- cart category -->
-      <div id="cart-container" class="grid grid-cols-4 gap-6">
+      <div id="cart-container" class="grid grid-cols-1 
+      md:grid-cols-2 lg:grid-cols-4
+      gap-6">
 
       </div>
    </main>
