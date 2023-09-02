@@ -57,6 +57,13 @@ const displayCategory = async (id) => {
         console.log(video)
 
         const div = document.createElement('div');
+       
+   var times = {
+    hours: time.hours,
+    minutes:time.minutes
+  };
+  
+  
         div.innerHTML = `
             <div class="card glass">
       <figure><img src=${video.thumbnail} alt=""/>
@@ -64,7 +71,7 @@ const displayCategory = async (id) => {
       </figure>
       
       <p class="mt-[-25px] text-white bg-black w-44 ml-2 " >
-      Hours: ${time.hours? time.hours: "0"} Minutes: ${time.minutes? time.minutes: "0"}ago
+      Hours: ${times.hours} Minutes: ${times.minutes}ago
       </p>
       <div class="card-body">
 
