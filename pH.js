@@ -175,7 +175,7 @@ const sort = async (id) => {
 }
 
 const blog =()=>{
-    window.location.href='https://64f2f6b3d758945d66228f0d--creative-conkies-480b80.netlify.app/'
+    window.location.href='https://64f31fdfd2209b6d91574bfd--comfy-granita-eb0703.netlify.app/'
 }
 
 
